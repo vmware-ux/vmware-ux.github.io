@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Apps Design Standards</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="maincss.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+        <h3 class="text-muted">App Design Standards</h3>
+        <nav>
+          <ul class="nav nav-justified">
+            <li><a href="index.html">Home</a></li>
+            <li class="active" href="onboarding.html"><a>Onboarding</a></li>
+            <li><a href="#">App1</a></li>
+            <li><a href="#">App2</a></li>
+            <li><a href="#">App3</a></li>
+            <li><a href="#">App4</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h5>
+
+To have a cohesive, unified and a suite-like apps experience the most important flow that needs to be consistent is the FTUE and the passcode screens. With this in mind the Apps UX team would like to propose a system for all VMware Apps to adopt.
+</h5>
+      </div>
+
+      <div id="sidebar-menu" class="col-md-3 hidden-xs hidden-sm">
+        <ul class="main-menu nav nav-stacked affix">
+        <li><a href="#layout">Layout</a>
+            <ul class="sub-menu"><li><a href="#splashscreens">Splash screens</a></li>
+                                <li><a href="#otherscreens">All other screens</a></li>
+            </ul>
+        </li>
+        <li><a href="#components">Components</a>
+            <ul class="sub-menu"><li><a href="#appbar">App bar</a></li>
+                                <li><a href="#textfields">Text fields</a></li>
+                                <li><a href="#buttons">Buttons</a></li>
+                                <li><a href="#loading">Loading Indicators</a></li>
+                                <li><a href="#password">Password fields</a></li>
+            </ul>
+        </li>
+        <li><a href="#animation">Animation and Behavior</a>
+
+
+        </ul>
+    </div>
+    <div id="static-content" class="col-md-9">
+        <h3 id="layout">Layout</h3>
+        <p>The layout of the FTUE screens is pretty standard and true to the platform.</p>
+      <h4 id="splashscreens">Splash Screens</h4>
+      <p>Splash/ Launch screen is the screen the user sees upon launch of the app while they wait for the app to load. The splashscreen isn’t an opportunity for artistic expression. It’s solely intended to enhance the perception of your app as quick to launch and immediately ready for use. Every app must supply a launch screen.</p>
+      <blockquote><ul>
+        <li>The splash screen is only shown on kill-launch sequences and when it takes time to load the app.</li>
+        <li>If the app loading time exceeds 1 second then a loading indicator should be shown.</li></ul></blockquote>
+        <b><i><p class="text-danger">Reach out to Yong for splash screen mocks and specs with and without loading indicator</p></i></b>
+  
+
+      <h4 id="otherscreens">All other screens</h4>
+      <p>All the remaining screens in the FTUE have a standard structure.</p>
+<blockquote><ul>
+        <li>The app bar lies at the top and is optional in screens that need a title. </li>
+        <li>The page content folows below it.</li></ul></blockquote>
+
+         <div class="row">
+         <h6>EXAMPLES</h6>
+        <div class="col-md-3"> <figure><img class="img-thumbnail" src="images/Welcome_dark.png" alt="iOS Dark" > <figcaption class="figure-img">iOS Dark</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="images/Welcome_light.png" alt="iOS Light"><figcaption class="figure-img">iOS Light</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="images/Welcome_no_keys_dark_Android.png" alt="Android Dark"><figcaption class="figure-img">Android Dark</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="images/Welcome_no_keys_Android.png" alt="Android Light"><figcaption class="figure-img">Android Light</figcaption></figure></div>
+      </div>
+
+      <div class="row">
+      <h6>SPECS</h6>
+        <div class="col-md-4"> <figure><img class="img-thumbnail" src="images/Welcome_dark_spec.png" alt="iOS Dark" ><figcaption class="figure-img">iOS Dark specs</figcaption></figure> </div>
+        <div class="col-md-4"><p>Regardless of whether you use the light or dark theme the structure of the pages should always be the same</p><p>These two screens show the measurements for the dark theme. </p></div>
+        <div class="col-md-4"><figure><img class="img-thumbnail" src="images/Welcome_no_keys_dark_Android_spec.png" alt="Android Dark"><figcaption class="figure-img">Android Dark specs</figcaption></figure></div>
+        
+      </div>
+
+
+
+
+
+
+        <h3 id="components">Components</h3>
+      <h4 id="appbar">App Bar</h4>
+      <p>The app bar will be used when the page needs a header and is optional. Should be used when giving context to the user if necessary. The app bar may have a back button if necessary</p>
+
+      <div class="row">
+         <h6>EXAMPLES</h6>
+        <div class="col-md-3"> <figure><img class="img-thumbnail" src="images/ios_navbar_dark.png" alt="iOS Dark" > <figcaption class="figure-img">iOS App bar D</figcaption></figure> <br><figure><img class="img-thumbnail" src="images/ios_navbar_options_dark.png" alt="iOS Dark" > <figcaption class="figure-img">iOS App bar D w options</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="" alt="insert image"><figcaption class="figure-img">iOS L</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="images/android_navbar_dark.png" alt="Android Dark"><figcaption class="figure-img">Android App bar D</figcaption></figure><br><figure><img class="img-thumbnail" src="images/android_navbar_options_dark.png" alt="Android Dark"><figcaption class="figure-img">Android Appbar D w options</figcaption></figure>
+        </div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image"><figcaption class="figure-img">Android L</figcaption></figure></div>
+      </div>
+      <div class="row">
+      <h6>SPECS</h6>
+        <div class="col-md-4"> <figure><img class="img-thumbnail" src="images/ios_navbar_spec.png" alt="iOS Dark" > <figcaption class="figure-img">iOS App bar D</figcaption></figure> <br><figure><img class="img-thumbnail" src="images/ios_navbar_dark_options_spec.png" alt="iOS Dark" > <figcaption class="figure-img">iOS App bar D w options</figcaption></figure>
+        </div>
+        <div class="col-md-4"> <dl>
+                                  <dt>iOS Appbar D</dt>
+                                  <dd>App bar height: 44px</dd>
+                                  <dd>Left and right padding of app bar: 8px</dd>
+                                  <dd>No shadow/ separator</dd>
+                                  <dd>Title color: #ffffff 100%</dd>
+                                  <dd>Title bottom padding  11px</dd>
+                                  <dd>Title font-size: 17px</dd>
+                                  <dd>Title font-face: SFUIDisplay-Meduium</dd>
+                                  <dd>Title alignment: center</dd>
+                                  <br>
+                                  <dt>Android Appbar D</dt>
+                                  <dd>App bar height: 56dp</dd>
+                                  <dd>Left and right padding of app bar: 16dp</dd>
+                                  <dd>Title color: #ffffff 100%</dd>
+                                  <dd>Title bottom padding  20dp</dd>
+                                  <dd>Title font-size: 17px</dd>
+                                  <dd>Title font-face: Roboto-Meduium</dd>
+                                  <dd>Title left padding w/o icon: 24dp</dd>
+                                  <dd>Title left padding w icon: 55dp</dd>
+                                  </dl> 
+        </div>
+        <div class="col-md-4"><figure><img class="img-thumbnail" src="images/android_appbar_dark_spec.png" alt="iOS Dark" > <figcaption class="figure-img">iOS App bar D</figcaption></figure> <br><figure><img class="img-thumbnail" src="images/android_appbar_dark_options_spec.png" alt="iOS Dark" > <figcaption class="figure-img">iOS App bar D w options</figcaption></figure></div>
+        
+      </div>
+
+
+      <h4 id="textfields">Text fields</h4>
+      <p>Text fields will be standard on Android. They have different states based on user interaction with them. They are stated as below.</p>
+        <div class="row">
+        <h6>EXAMPLE</h6>
+        <div class="col-md-6"><figure><img class="img-thumbnail" src="images/ios_text_fields_dark.png" alt="iOS Dark" > <figcaption class="figure-img">iOS text fields D</figcaption></figure></div>
+        <div class="col-md-6"><figure><img class="img-thumbnail" src="images/android_text_fields_dark.png" alt="iOS Dark" > <figcaption class="figure-img">Android text fields D</figcaption></figure></div>
+      </div>
+
+      <div class="row">
+        <h6>SPECS</h6>
+        <div class="col-md-6"><figure><img class="img-thumbnail" src="images/ios_text_fields_spec.png" alt="iOS Dark" > <figcaption class="figure-img">iOS text fields D specs</figcaption></figure></div>
+        <div class="col-md-6"><figure><img class="img-thumbnail" src="images/android_text_fields_spec.png" alt="iOS Dark" > <figcaption class="figure-img">Android text fields D specs</figcaption></figure></div>
+      </div>
+
+      <h4 id="buttons">Buttons</h4>
+      <p>There are primary and secondary buttons that will be used all thorugh the FTUE</p>
+      <blockquote><ul>
+        <li>Primary buttons will exhibit the primary app color</li>
+        <li>Secondary buttons will  be shown as plain text, so that the user is not distracted by them.</li>
+        <li>Primary buttons will appear only after the required/ nessary fields have been filled.</li></ul></blockquote>
+
+      <div class="row">
+        <h6>EXAMPLE</h6>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="images/ios_button.png" alt="iOS Dark" > <figcaption class="figure-img">iOS primary button</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="Animation to be inserted" > <figcaption class="figure-img">iOS primary button animation</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="images/android_button.png" alt="iOS Dark" > <figcaption class="figure-img">Android primary button</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="images/android_button_animation.gif" alt="iOS Dark" > <figcaption class="I">Android  primary button animation</figcaption></figure></div>
+      </div>
+
+      <div class="row">
+        <h6>SPECS</h6>
+        <div class="col-md-4"><figure><img class="img-thumbnail" src="images/ios_button_spec.png" alt="iOS Dark" > <figcaption class="figure-img">iOS button</figcaption></figure></div>
+        <div class="col-md-4">
+          <dl>
+                                  <dt>iOS primary button D</dt>
+                                  <dd>Button height: 44px</dd>
+                                  <dd>Button color: Primary app color</dd>
+                                  <dd>Text alignment: center & middle</dd>
+                                  <dd>Text font-face: SFUIDisplay-Semibold</dd>
+                                  <dd>Text font-size: 14px</dd>
+                                  <dd>Text color: #ffffff 100%</dd>
+                                  <br>
+                                  <dt>Android primary button D</dt>
+                                  <dd>Button height: 48dp</dd>
+                                  <dd>Button color: Primary app color</dd>
+                                  <dd>Text right padding: 16dp</dd>
+                                  <dd>Text bottom padding: 16dp</dd>
+                                  <dd>Text font-face: Roboto-Semibold</dd>
+                                  <dd>Text font-size: 14dp</dd>
+                                  <dd>Text color: #ffffff 100%</dd>
+                                  </dl> 
+
+        </div>
+        <div class="col-md-4"><figure><img class="img-thumbnail" src="images/android_button_spec.png" alt="Animation to be inserted" > <figcaption class="figure-img">iOS button animation</figcaption></figure></div>
+      </div>
+
+      <h4 id="loading">Loading indicators</h4>
+      <p>Loading indicators are shown when the user interacts with the app and the app takes more than 1 second to respond. These can be determinate or indeterminate</p>
+      <blockquote><ul>
+        <li>When indicators are <b>determinate</b> they indicate how long an operation will take when the percentage complete is detectable.</li>
+        <li>When indicators are <b>indeterminate</b> they request that the user wait while something finishes when it’s not necessary to indicate how long it will take.</li>
+        <li>If the apps processing time exceeds 1 second then a loading indicator must be shown.</li></ul></blockquote>
+
+        <div class="row">
+        <h6>EXAMPLE</h6>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image" > <figcaption class="figure-img">iOS determinate</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image" > <figcaption class="figure-img">iOS indeterminate </figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image" > <figcaption class="figure-img">Android determinate</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image" > <figcaption class="I">Android  indeterminate</figcaption></figure></div>
+      </div>
+      <div class="row">
+        <h6>SPECS</h6>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image" > <figcaption class="figure-img">iOS determinate</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image" > <figcaption class="figure-img">iOS indeterminate </figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image" > <figcaption class="figure-img">Android determinate</figcaption></figure></div>
+        <div class="col-md-3"><figure><img class="img-thumbnail" src="#" alt="insert image" > <figcaption class="I">Android  indeterminate</figcaption></figure></div>
+      </div>
+
+
+
+
+
+      <h4 id="password">Password fields</h4>
+      <p>Password fields are similar to text fields. There are a few exceptions listed below however.</p>
+      <blockquote><ul>
+        <li>Password fields must have a show and hide option</li>
+        <li>Password fields must be accompanied with requirements shown one at time to the user. For instance if there are 4 requirements, show requirement 1 first. Once that is fulfilled show 2, then 3 and then 4. </li>
+        <li>Password text must be hidden by default</li></ul></blockquote>
+      <h3 id="animation">Animation and Behavior</h3>
+      <p>Lorem Ipsum is simply dummy text of the print
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, tta sotam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+
+
+    </div>
+
+      
+    </div>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>&copy; EUC Apps UX team</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
