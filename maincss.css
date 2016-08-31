@@ -117,9 +117,15 @@ ul {
 
 .examspecbox
 {
-padding: 50px 50px 50px 50px;
+padding: 30px 50px 30px 50px;
 margin-bottom: 14px;
 background-color: #f7f7f9;
 border: 1px solid #e1e1e8;
 border-radius: 4px;
+}
+
+.main-title
+{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e1e8;
 }
