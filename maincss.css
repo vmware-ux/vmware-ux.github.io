@@ -115,4 +115,13 @@ ul {
   font-weight: 400;
 }
 
+#examspecbox
+{
+padding: 9px 14px;
+margin-bottom: 14px;
+background-color: #f7f7f9;
+border: 1px solid #e1e1e8;
+border-radius: 4px;
+}
+
 
